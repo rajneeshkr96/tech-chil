@@ -1,0 +1,116 @@
+.footer {
+    height: 30vh;
+    color: #241d52;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.footer-sec1 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.about {
+    width: 22%;
+    min-width: 300px;
+}
+
+.about p:first-child {
+    font-family: 'Bebas Neue', cursive;
+    font-size: x-large;
+}
+
+.about p:last-child {
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: large;
+
+}
+
+.contact {
+    width: 22%;
+    min-width: 300px;
+}
+
+.contact p {
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: large;
+}
+
+.contact p:first-child {
+    font-family: 'Bebas Neue', cursive;
+    font-size: x-large;
+
+}
+
+.contact a {
+    text-decoration: none;
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: large;
+    color: #241d52;
+
+
+}
+
+.categary {
+    width: 22%;
+    min-width: 300px;
+}
+
+.categary p:first-child {
+    font-family: 'Bebas Neue', cursive;
+    font-size: x-large;
+
+}
+
+.categary ul li {
+    list-style: none;
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: large;
+}
+
+.page {
+    width: 22%;
+    min-width: 300px;
+}
+
+.page p:first-child {
+    font-family: 'Bebas Neue', cursive;
+    font-size: x-large;
+
+}
+
+.page ul li {
+    list-style: none;
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: large;
+
+}
+
+.footer-sec2 {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.po-icons {
+    color: #241d52;
+    font-size: 2rem;
+    margin: 0rem 1rem;
+}
+
+@media screen and (max-width: 1177px) {
+    .footer-sec1 div{
+        text-align: center;
+    }
+    .footer-sec2{
+        flex-direction: column-reverse;
+        align-items: center;
+        
+    }
+    
+    
+    
+}

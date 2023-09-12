@@ -1,0 +1,154 @@
+.logo {
+    margin-left: 2rem;
+}
+
+.main-banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.main-banner::before {
+    content: '';
+    background: url('../../../assets/background/background.jpg') no-repeat center center/cover;
+    position: absolute;
+    background-position: top;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.br-fir-child {
+    width: 50%;
+    min-width: 340px;
+}
+
+.br-fir-child p:nth-child(1) {
+    font-size: 6em;
+    text-transform: uppercase;
+    line-height: 4.8rem;
+    font-family: 'Baron Neue';
+    color: #241d52;
+
+}
+
+.br-fir-child p:nth-child(2) {
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #fa2b69;
+    font-size: 1.5rem;
+
+
+}
+
+.br-fir-child p:nth-child(3) {
+    width: 80%;
+    margin-top: 2rem;
+    color: #241d52;
+
+}
+
+.main-banner input {
+    margin-top: 3rem;
+    margin-left: 30%;
+    padding: 0.4rem 2rem;
+    font-size: larger;
+    border-radius: 15px;
+    border: none;
+    color: aliceblue;
+    background-image: linear-gradient(to right, red, #fa2b69);
+    cursor: pointer;
+
+}
+
+.br-sec-child {
+    width: 50%;
+    position: relative;
+    min-width: 340px;
+
+}
+
+
+.br-hp {
+    width: 20rem;
+    background-color: #241d52;
+    background-image: linear-gradient(to bottom right, rgb(243, 129, 129), #a91a81, #e460e9);
+    border-radius: 18rem;
+    position: absolute;
+    top: 0em;
+    right: 7em;
+    height: 20rem;
+    z-index: -1;
+}
+.br-width{
+    width: 22em;
+}
+
+.fix-img {
+    position: absolute;
+    top: -4em;
+    right: 3em;
+
+}
+
+.img-hoverd:hover {
+    width: 24em;
+    top: -4rem;
+}
+.fix-img-mar{
+    height: 6rem;
+    
+}
+
+@media screen and (max-width: 1003px) {
+    /* html{
+        font-size: 13px;
+    } */
+    .main-banner {
+        font-size: 14px;
+    
+    }
+
+}
+@media screen and (max-width: 960px) {
+
+    .fix-img {
+        position: absolute;
+        top: -3em;
+        right: 7em;
+    
+    }
+}
+@media screen and (max-width: 917px) {
+    html{
+        font-size: 12px;
+    }
+    .main-banner {
+        font-size: 10px;
+        
+    }
+    .fix-img {
+        position: absolute;
+        top: -3em;
+        right: 8em;
+    
+    }
+}
+@media screen and (max-width: 680px) {
+    .logo{
+        display: none;
+    }
+    .br-sec-child{
+        margin-top: 4rem;
+    }
+    .fix-img-mar{
+        height: 18rem;
+        
+    }
+    
+    
+}

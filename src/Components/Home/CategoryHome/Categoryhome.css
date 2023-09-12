@@ -1,0 +1,56 @@
+.categorys {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.category {
+    margin: 0.5rem;
+    width: 17rem;
+    height: 10rem;
+    background-color: #0d0a1b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-width: 17rem;
+}
+
+.category p {
+    position: absolute;
+    font-family: 'Baron Neue';
+    font-size: xx-large;
+    top: 3.2rem;
+    left: 3rem;
+    color: aliceblue;
+    text-shadow: 2px black;
+    
+}
+
+.cate-img {
+    width: 8rem; 
+    margin: 0% auto;
+    z-index: 5;
+}
+
+.cate-img:hover {
+    width: 9rem;
+    margin: 0% auto;
+}
+@media screen and (max-width: 917px) {
+    .category p {
+        top: 3.2rem;
+        left: 0.8rem;    
+    }
+
+  
+}
+@media screen and (max-width: 677px) {
+    .categorys {
+        margin-top: 2.5rem;
+    }
+
+  
+}

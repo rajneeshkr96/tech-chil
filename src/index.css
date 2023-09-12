@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@300&family=Bebas+Neue&display=swap');
+
+
+@font-face {
+    font-family: 'Baron Neue';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Baron Neue'), url('Baron Neue.woff') format('woff');
+    }
+html{
+    height: 16px;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+    
+.test{
+    border: 2px solid red;
+}
+.test2{
+    border: 2px solid rgb(0, 0, 0);
+}
+.test2{
+    border: 2px solid rgb(45, 0, 247);
+}
+.test4{
+    border: 2px solid rgb(211, 255, 90);
+}

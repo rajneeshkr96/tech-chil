@@ -1,0 +1,103 @@
+.singleproduct-container{
+    margin-bottom: 2rem;
+}
+.sec1-single-roduct{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.thumbmail-container-product{
+    width: 50%;
+    text-align: center;
+
+
+}
+.single-product-thumbmail{
+    width: 37%;
+    min-width: 165px;
+}
+.single-product-discription{
+    width: 50%;
+    padding: 2rem;
+
+}
+
+.single-product-discription p:nth-child(1){
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-size: x-large;
+    color: #241d52;
+}
+.single-product-discription p:nth-child(2){
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    color: #241d52b4;
+    font-size: x-large;
+}
+.single-product-discription p:nth-child(3){
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: large;
+    color: #241d52;
+}
+.addtocart{
+    display: flex;
+}
+.addtocart span{
+    display: flex;
+    border: 1px solid #2a26467a;
+    width: 2rem;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.addtocart span:last-child{
+    display: flex;
+    width: 6rem;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    background-color: #df2605;
+    color: #ffffff;
+}
+.single-cate span{
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    color: #241d52;
+
+}
+.single-cate {
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    color: #241d5296;
+
+}
+
+.share-icons-container{
+    width: 50%;
+}
+.share-icons{
+    margin: 0rem 0.2rem;
+}
+
+.margin-top-fix{
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 599px) {
+    .single-product-discription{
+        width: 80%;
+        text-align: center;
+    }
+    .share-icons-container{
+        margin: 1rem auto;
+    }
+    .addtocart{
+        
+        margin: 1rem auto;
+        display: flex;
+        justify-content: center;
+    }
+    
+}

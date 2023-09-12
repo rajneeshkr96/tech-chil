@@ -1,0 +1,36 @@
+.cartitem-container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 6rem;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    color: #241d52;
+}
+.cartitem-container:hover{
+    background-color: rgba(59, 51, 51, 0.034);
+}
+
+.cart-thumbmail-container{
+    width: 3rem;
+    height: 4rem;
+}
+.cart-thumbmail{
+    width: 100%;
+}
+
+.cart-value{
+    font-size: small;
+}
+.cart-value span{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.cart-value span:last-child{
+    height: 1.5rem;
+    width: 4rem;
+}
+
+.cart-qantity{
+    margin-top: 0.2rem;
+}
