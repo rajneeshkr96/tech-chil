@@ -18,25 +18,37 @@
     min-width: 17rem;
 }
 
-.category p {
-    position: absolute;
+.category span {
     font-family: 'Baron Neue';
     font-size: xx-large;
-    top: 3.2rem;
-    left: 3rem;
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
     color: aliceblue;
     text-shadow: 2px black;
+    text-align: center;
+    height: 58px;
     
 }
-
+.ctg-img{
+    width: 9rem;
+    margin: 0% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .cate-img {
-    width: 8rem; 
+    width: 80%; 
     margin: 0% auto;
     z-index: 5;
 }
 
 .cate-img:hover {
-    width: 9rem;
+    width: 100%;
     margin: 0% auto;
 }
 @media screen and (max-width: 917px) {
