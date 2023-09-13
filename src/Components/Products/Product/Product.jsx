@@ -1,20 +1,24 @@
 import React from "react";
 import bud from "../../../../public/product-bud.png";
 import "./Product.css";
-function Product() {
+function Product({id,name="Not found",price="500",img}) {
   return (
     <div className="product-body">
       <div className="thembmail-cantainer">
-        <div>
-          <img className="thembmail" src={bud} alt="" />
+        
+        <div className="img-container">
+         {img? <img className="thembmail" src={img}  alt="" />: <img className="thembmail" src={bud}  alt="" />}
+          
         </div>
         <div className="product-discription">
           <div>
             <span>title:- </span>
-            {"headphone fdfgdfgfgdfg"}
+            <span>
+            {name}
+            </span>
           </div>
           <div>
-            <span>Price :-</span> {"599 Rs"}
+            <span>Price :-</span> {price} RS
           </div>
         </div>
       </div>

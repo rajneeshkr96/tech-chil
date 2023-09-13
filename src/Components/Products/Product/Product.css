@@ -12,6 +12,7 @@
     border-radius: 10px;
     margin: auto 0px;
 }
+
 .thembmail-cantainer{
     width: 10rem;
     margin-top: 1rem;
@@ -22,14 +23,41 @@
 
 }
 
+.img-container{
+    position: absolute;
+    top: 0.5rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
+    width: 9rem;
+    height: 15rem;
+}
 .thembmail{
-    width: 8rem;
+    cursor: pointer;
+    width: 80% ;
+    height: 100%;
+    object-fit: contain;
 }
 .thembmail:hover{
-    width: 9rem;
+    width: 100% ;
 }
+.product-discription{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
+}
 .product-discription div:nth-child(1){
     width: 11.5rem;
     height: 2rem;
