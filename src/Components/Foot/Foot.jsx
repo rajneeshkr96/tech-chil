@@ -3,7 +3,7 @@ import "./Foot.css"
 import { FaCcMastercard,FaCcVisa,FaCcPaypal,FaGooglePay,FaRupeeSign } from "react-icons/fa";
 function Foot() {
   return (
-    <footer className='footer'>
+    <footer id='footer' className='footer'>
         <section className='footer-sec1 test1'>
             <div className="about">
                 <p>About</p>

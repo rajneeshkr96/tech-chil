@@ -1,23 +1,35 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import "./singleproducts.css"
 import bud from "../../../public/product-bud.png"
 import { FaRupeeSign } from "react-icons/fa";
 import { BsFacebook,BsTwitter,BsInstagram,BsLinkedin } from "react-icons/bs";
 import Category from '../Category/Category';
+import { useParams } from 'react-router-dom';
 function Singleproducts() {
+  const param = useParams()
+  const [product,setProduct] = useState()
   const logo_size = "1.5rem"
   const colour = "#241d52";
+
+  const getData =  ()=>{
+    fetch(`https://fakestoreapi.com/products/${param.id}`)
+            .then(res=>res.json())
+            .then(json=>setProduct(json))
+  }
+  useEffect(() => {
+   getData();
+  }, []);
   return (
     <div className='singleproduct-container'>
       <div className='sec-heading'>{"single products"}</div>
       <section className='sec1-single-roduct'>
         <div className='thumbmail-container-product margin-top-fix '>
-          <img className='single-product-thumbmail' src={bud} alt="" />
+          {product?.image?<img className='single-product-thumbmail' src={product?.image} alt="" />:<img className='single-product-thumbmail' src={bud} alt="" />}
         </div>
         <div className='single-product-discription  '>
-          <p >Mivi DuoPods K7 Metallic Finish,AI ENC,50H Playtime,Low Latency Gaming,Rich Bass,5.3 Bluetooth Headset  (Coral, In the Ear)</p>
-          <p ><FaRupeeSign style={{fontSize:"1rem"}}/> 963-</p>
-          <p className='margin-top-fix'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, reiciendis delectus fuga blanditiis quam omnis deserunt fugiat, expedita soluta similique ducimus repudiandae iste non possimus, iusto eos cupiditate quidem commodi?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, deleniti provident placeat aspernatur fuga molestias. Atque magnam blanditiis obcaecati. Sit blanditiis itaque autem iure ex minus dignissimos optio fuga dolorem.</p>
+          <p >{product?.title}</p>
+          <p ><FaRupeeSign style={{fontSize:"1rem"}}/> {product?.price}</p>
+          <p className='margin-top-fix'>{product?.description}</p>
           <div className='addtocart margin-top-fix'>
             <span>-</span>
             <span>{"1"}</span>
@@ -25,7 +37,7 @@ function Singleproducts() {
             <span>Add to cart</span>
           </div>
           <div className='single-cate margin-top-fix'>
-            <span>Category </span>{"buds"}
+            <span>Category </span>{product?.category}
           </div>
           <div className='share-icons-container margin-top-fix'>
           <BsFacebook className='share-icons' style={{fontSize:logo_size , color:colour}}/>

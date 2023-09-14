@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    
 
 }
 
@@ -16,6 +17,7 @@
     justify-content: center;
     position: relative;
     min-width: 17rem;
+    cursor: pointer;
 }
 
 .category span {

@@ -51,6 +51,12 @@
     cursor: pointer;
   
 }
+.left li a{
+    text-decoration: none;
+    list-style: none;
+    color: #fa2b69;
+  
+}
 .left li:hover {
     list-style: none;
     margin: 0rem 3.9rem;
