@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-import "./singleproducts.css"
+import "./Singleproducts.css"
 import bud from "../../../public/product-bud.png"
 import { FaRupeeSign } from "react-icons/fa";
 import { BsFacebook,BsTwitter,BsInstagram,BsLinkedin } from "react-icons/bs";
